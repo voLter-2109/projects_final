@@ -1,0 +1,123 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #111;
+}
+.wrapper div {
+  position: absolute;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.wrapper div:before, .wrapper div:after {
+  content: "";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+}
+.wrapper .loader {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30em;
+  height: 30em;
+  border: 0.5em solid #97e2dd;
+  border-radius: 50%;
+  animation: shadowOuter 4s 0s ease infinite alternate;
+}
+.wrapper .loader:before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 29.3em;
+  height: 29.3em;
+  border: 0.7em solid rgba(51, 86, 150, 0.75);
+  border-radius: 50%;
+  animation: shadowInner 4s 0s ease infinite alternate;
+}
+.wrapper .loader:after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 28.6em;
+  height: 28.6em;
+  border: 0.7em solid rgba(51, 86, 150, 0.25);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 7em #335696);
+}
+.wrapper .dot {
+  top: 50%;
+  width: 5em;
+  height: 5em;
+  overflow: visible;
+  transition: all 1s ease;
+  transform: rotate(0deg);
+}
+.wrapper .dot:after {
+  top: -2em;
+  left: 70%;
+  width: 3em;
+  height: 3em;
+  background: #97e2dd;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 0.5em #97e2dd) drop-shadow(0 0 0.25em #335696);
+}
+.wrapper .dot:nth-child(1) {
+  left: calc(33% - 5em);
+  animation: moveFirst 2s 0s ease infinite;
+}
+.wrapper .dot:nth-child(2) {
+  left: calc(50% - 5em);
+  animation: moveSecond 2s 0s ease infinite;
+}
+.wrapper .dot:nth-child(3) {
+  left: calc(67% - 5em);
+  animation: moveThird 2s 0s ease infinite;
+}
+
+@keyframes moveFirst {
+  0% {
+    left: calc(33% - 5em);
+  }
+  100% {
+    left: calc(50% - 5em);
+  }
+}
+@keyframes moveSecond {
+  0% {
+    left: calc(50% - 5em);
+  }
+  100% {
+    left: calc(67% - 5em);
+  }
+}
+@keyframes moveThird {
+  0% {
+    left: calc(67% - 5em);
+    transform: rotate(0deg);
+  }
+  100% {
+    left: calc(33% - 5em);
+    transform: rotate(360deg);
+  }
+}
+@keyframes shadowOuter {
+  0% {
+    filter: drop-shadow(0 0 1em #335696);
+  }
+  100% {
+    filter: drop-shadow(0 0 3em #335696);
+  }
+}
+@keyframes shadowInner {
+  0% {
+    filter: drop-shadow(0 0 3em #335696);
+  }
+  100% {
+    filter: drop-shadow(0 0 5em #335696);
+  }
+}/*# sourceMappingURL=testStyle.css.map */

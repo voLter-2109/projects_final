@@ -1,0 +1,135 @@
+[
+  {
+    "id": "0",
+    "imageUrl": [
+      "https://static.batnorton.com/image/12883-5829f161e2a562.56431249/1462x2048-1_2090833024.jpg",
+      "https://static.batnorton.com/image/42228-627ba7e46eb0a2.92178034/1462x2048-1_4041937675.jpg"
+    ],
+    "name": "MANTLE. nomadic",
+    "types": [0, 1],
+    "sizes": ["S", "M", "L"],
+    "price": 8030,
+    "category": 1,
+    "rating": 4
+  },
+  {
+    "id": "1",
+    "imageUrl": [
+      "https://static.batnorton.com/image/16940-59806aaac60215.10241071/1462x2048-1_4081652180.jpg",
+      "https://static.batnorton.com/image/38460-615167e907df03.13033947/1072x1500-1_935223251.jpg"
+    ],
+    "name": "МАНТИЯ-ДОЖДЕВИК ДЕМЕНТОР.",
+    "types": [0, 1],
+    "sizes": ["S", "M", "L"],
+    "price": 7490,
+    "category": 1,
+    "rating": 6
+  },
+  {
+    "id": "2",
+    "imageUrl": [
+      "https://static.batnorton.com/image/47196-6430580ae19340.08400542/1462x2048-1_363345406.jpg",
+      "https://static.batnorton.com/image/47249-64305a46dcf3b4.64754543/1462x2048-1_4171130572.jpg"
+    ],
+    "name": "МАНТИЯ ИЗ ФАКТУРНОГО ХЛОПКА SHADOW",
+    "types": [0, 1],
+    "sizes": ["S", "M", "L"],
+    "price": 2950,
+    "category": 1,
+    "rating": 4
+  },
+  {
+    "id": "3",
+    "imageUrl": [
+      "https://static.batnorton.com/image/12883-5829f161e2a562.56431249/1462x2048-1_2090833024.jpg",
+      "https://static.batnorton.com/image/42228-627ba7e46eb0a2.92178034/1462x2048-1_4041937675.jpg"
+    ],
+    "name": "Кисло-сладкий цыпленок",
+    "types": [0, 1],
+    "sizes": ["S", "M", "L"],
+    "price": 2750,
+    "category": 1,
+    "rating": 2
+  },
+
+  {
+    "id": "4",
+    "imageUrl": [
+      "https://static.batnorton.com/image/46603-6405e221c3fd72.45452126/1462x2048-1_2057354141.jpg",
+      "https://static.batnorton.com/image/46848-641afaedec7b19.96502496/1462x2048-1_2442746078.jpg"
+    ],
+    "name": "КРОП-ХУДИ DEMIDEVIL.",
+    "types": [0, 1],
+    "sizes": ["S", "M", "L"],
+    "price": 4150,
+    "category": 2,
+    "rating": 8
+  },
+  {
+    "id": "5",
+    "imageUrl": [
+      "https://static.batnorton.com/image/39567-61e16653d4a670.87085100/1462x2048-1_3155170493.jpg",
+      "https://static.batnorton.com/image/40489-620ba07bd58b17.87425608/1072x1500-1_762104518.jpg"
+    ],
+    "name": "ХУДИ МНОГОСЛОЙНОЕ СО СТРОПАМИ KAMI.",
+    "types": [0, 1],
+    "sizes": ["S", "M", "L"],
+    "price": 5800,
+    "category": 2,
+    "rating": 2
+  },
+
+  {
+    "id": "6",
+    "imageUrl": [
+      "https://static.batnorton.com/image/43055-6294c1e1841be7.42569764/1462x2048-1_2591994026.jpg",
+      "https://static.batnorton.com/image/39484-6197b465f2e0a0.83764975/1072x1500-1_837767918.jpg"
+    ],
+    "name": "ПЛАТЬЕ С ПОДВЯЗКОЙ ORIGAMI.",
+    "types": [0, 1],
+    "sizes": ["S", "M", "L"],
+    "price": 6750,
+    "category": 3,
+    "rating": 9
+  },
+  {
+    "id": "7",
+    "imageUrl": [
+      "https://static.batnorton.com/image/46977-642e81148cf2b9.75932403/1462x2048-1_2167459548.jpg",
+      "https://static.batnorton.com/image/47112-642fd3114971c8.96539571/1462x2048-1_2125977553.jpg"
+    ],
+    "name": "ТУНИКА SHADOW. БЕЛАЯ",
+    "types": [0, 1],
+    "sizes": ["S", "M", "L"],
+    "price": 4500,
+    "category": 3,
+    "rating": 10
+  },
+  {
+    "id": "8",
+    "imageUrl": [
+      "https://static.batnorton.com/image/46948-642e7fad74c646.28182323/1462x2048-1_2259762206.jpg",
+      "https://static.batnorton.com/image/47255-64305a847d9316.02319508/1462x2048-1_3027425465.jpg"
+    ],
+    "name": "ПЛАТЬЕ АСИММЕТРИЧНОЕ AMATERASU.",
+    "types": [0, 1],
+    "sizes": ["S", "M", "L"],
+    "price": 3950,
+    "category": 3,
+    "rating": 10
+  },
+
+  {
+    "id": "9",
+    "imageUrl": [
+      "https://static.batnorton.com/image/43049-6294c0b46e5fa3.11708056/1462x2048-1_3599896287.jpg",
+      "https://static.batnorton.com/image/35342-607092aa2bfd80.33456994/1462x2048-1_21659114.jpg"
+    ],
+    "name": "КИМОНО С НАШИВКАМИ YOUKAI",
+    "types": [0, 1],
+    "sizes": ["S", "M", "L"],
+    "price": 2850,
+    "category": 4,
+    "rating": 7
+  }
+]

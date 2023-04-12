@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+.button {
+  min-width: 101px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 18px;
+  font-size: 20px;
+  border: none;
+  color: #fff;
+  letter-spacing: 3px;
+  position: relative;
+}
+.button-main {
+  background: linear-gradient(45deg, transparent 5%, #9F0013 5%);
+  box-shadow: 6px 0px 0px #6c000d;
+}
+.button-secondary {
+  background: linear-gradient(45deg, transparent 5%, #5C5C5C 5%);
+  box-shadow: 6px 0px 0px #434343;
+}
+.button-long {
+  background: linear-gradient(45deg, transparent 5%, #9F0013 5%);
+  box-shadow: 6px 0px 0px #6c000d;
+  width: 170px;
+  margin: 45px auto 0 auto;
+}
+.button:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  content: "MARVEL";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  -webkit-clip-path: var(--slice-0);
+          clip-path: var(--slice-0);
+}
+.button:hover:after {
+  animation: 10s glitch infinite;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    -webkit-clip-path: var(--slice-1);
+            clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  1% {
+    -webkit-clip-path: var(--slice-3);
+            clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  2% {
+    -webkit-clip-path: var(--slice-1);
+            clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  3% {
+    -webkit-clip-path: var(--slice-3);
+            clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  4% {
+    -webkit-clip-path: var(--slice-2);
+            clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  5% {
+    -webkit-clip-path: var(--slice-3);
+            clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  6% {
+    -webkit-clip-path: var(--slice-4);
+            clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  7% {
+    -webkit-clip-path: var(--slice-2);
+            clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  8% {
+    -webkit-clip-path: var(--slice-5);
+            clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  9% {
+    -webkit-clip-path: var(--slice-1);
+            clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  10% {
+    -webkit-clip-path: var(--slice-0);
+            clip-path: var(--slice-0);
+    transform: translate(0);
+  }
+}
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li,
+dl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.app {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 50px 0 50px 0;
+  position: relative;
+}
+
+main {
+  margin-top: 50px;
+  position: relative;
+}
+
+.pulse {
+  animation: pulse 1.5s ease-in-out 0.5s infinite;
+}
+
+#root {
+  background-color: rgba(206, 205, 205, 0.6941176471);
+  min-height: 100vh;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-enter {
+  opacity: 0;
+  transform: translate(0, 25px);
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: opacity 1500ms ease-out, transform 600ms ease;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transform: translate(0, 30px);
+  transition: opacity 1500ms ease-out, transform 600ms ease;
+}
+
+.mainBlock {
+  padding: 5px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0px 13px 40px -20px rgba(0, 0, 0, 0.205);
+}/*# sourceMappingURL=style.css.map */

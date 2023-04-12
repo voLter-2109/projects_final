@@ -1,0 +1,106 @@
+.button {
+  min-width: 101px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 18px;
+  font-size: 20px;
+  border: none;
+  color: #fff;
+  letter-spacing: 3px;
+  position: relative;
+}
+.button-main {
+  background: linear-gradient(45deg, transparent 5%, #9F0013 5%);
+  box-shadow: 6px 0px 0px #6c000d;
+}
+.button-secondary {
+  background: linear-gradient(45deg, transparent 5%, #5C5C5C 5%);
+  box-shadow: 6px 0px 0px #434343;
+}
+.button-long {
+  background: linear-gradient(45deg, transparent 5%, #9F0013 5%);
+  box-shadow: 6px 0px 0px #6c000d;
+  width: 170px;
+  margin: 45px auto 0 auto;
+}
+.button:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  content: "MARVEL";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  -webkit-clip-path: var(--slice-0);
+          clip-path: var(--slice-0);
+}
+.button:hover:after {
+  animation: 10s glitch infinite;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    -webkit-clip-path: var(--slice-1);
+            clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  1% {
+    -webkit-clip-path: var(--slice-3);
+            clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  2% {
+    -webkit-clip-path: var(--slice-1);
+            clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  3% {
+    -webkit-clip-path: var(--slice-3);
+            clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  4% {
+    -webkit-clip-path: var(--slice-2);
+            clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  5% {
+    -webkit-clip-path: var(--slice-3);
+            clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  6% {
+    -webkit-clip-path: var(--slice-4);
+            clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  7% {
+    -webkit-clip-path: var(--slice-2);
+            clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  8% {
+    -webkit-clip-path: var(--slice-5);
+            clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  9% {
+    -webkit-clip-path: var(--slice-1);
+            clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  10% {
+    -webkit-clip-path: var(--slice-0);
+            clip-path: var(--slice-0);
+    transform: translate(0);
+  }
+}/*# sourceMappingURL=button.css.map */

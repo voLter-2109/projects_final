@@ -1,0 +1,46 @@
+.app__header {
+  display: flex;
+  justify-content: space-between;
+}
+.app__title {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 37px;
+}
+.app__title .title {
+  position: relative;
+  overflow: hidden;
+  padding: 0 15px;
+}
+.app__title .title::before {
+  content: "";
+  position: absolute;
+  left: 110%;
+  top: 50%;
+  bottom: 16px;
+  width: 95%;
+  height: 14px;
+  transform: skew(-25deg);
+  background: rgba(238, 111, 87, 0.5);
+  z-index: -1;
+  transition: left 0.3s ease-in;
+}
+.app__title .title:hover:before {
+  left: 2%;
+}
+.app__title span {
+  color: #9F0013;
+}
+.app__menu ul {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+.app__menu ul li {
+  margin: 0 8px;
+}
+.app__menu ul li a:hover {
+  color: #9F0013;
+}/*# sourceMappingURL=appHeader.css.map */

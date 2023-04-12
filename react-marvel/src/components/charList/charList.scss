@@ -1,0 +1,72 @@
+@import '../../style/variables.scss';
+
+.char {
+    &__content {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 650px 425px;
+        column-gap: 25px;
+        align-items: start;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        column-gap: 25px;
+        row-gap: 30px;
+    }
+
+    &__item {
+        border-radius: 20px;
+        width: 200px;
+        height: 318px;
+        background-color: $dark;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, .25);
+        padding: 15px;
+        cursor: pointer;
+        transition: 0.3s transform;
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 15px;
+            object-fit: cover;
+            transform: translate(-15px, -15px);
+        }
+
+        &_selected {
+            box-shadow: 0 5px 20px $main-color;
+            transform: translateY(-8px);
+        }
+    }
+
+    &__name {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+.char__item-enter {
+    transform: scale(0.1) rotate(60deg);
+
+}
+
+.char__item-enter-active {
+    transition: all 500ms;
+    transform: scale(1) rotate(0deg);
+}
+
+.char__item-exit {
+    transition: all 500ms;
+}
+
+.char__item-exit-active {
+    transform: rotate(60deg);
+    transition: all 500ms;
+}

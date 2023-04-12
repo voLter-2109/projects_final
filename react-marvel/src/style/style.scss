@@ -1,0 +1,114 @@
+@import "./variables";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+@import "./button";
+
+* {
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li,
+dl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.app {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 50px 0 50px 0;
+    position: relative;
+}
+
+main {
+    margin-top: 50px;
+    position: relative;
+}
+
+.pulse {
+    animation: pulse 1.5s ease-in-out 0.5s infinite;
+}
+
+#root {
+    background-color: $body;
+    min-height: 100vh;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-enter {
+    opacity: 0;
+    transform: translate(0, 25px);
+    z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transform: translate(0, 0);
+
+    transition: opacity 1500ms ease-out, transform 600ms ease;
+}
+
+.fade-exit {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transform: translate(0, 30px);
+
+    transition: opacity 1500ms ease-out, transform 600ms ease;
+}
+.mainBlock {
+    padding: 5px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 13px 40px -20px rgba(0, 0, 0, 0.205);
+}
