@@ -27,6 +27,7 @@ const EmployeesComponent: React.FC = () => {
       title: "name",
       dataIndex: "firstName",
       key: "firstName",
+      
     },
     {
       title: "style",
