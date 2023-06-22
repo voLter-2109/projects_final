@@ -7,6 +7,9 @@
 <li>redux toolkit</li>
 <li>react-router-dom</li>
 <li>sass module</li>
+<li>jwt</li>
+<li>Prisma</li>
+<li>eXpress</li>
 <li>react-transition-group</li>
 <li>intersection-observer</li>
 <li>lodash</li>
