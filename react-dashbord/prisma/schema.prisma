@@ -1,0 +1,40 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// uuid сам генерирует код
+// default - значение по дефолту
+// unique -Определяет уникальное ограничение для этого поля.
+// relation
+// updatedAt
+// id 
+//  type Int
+model User {
+  id             String      @id @default(uuid())
+  email          String      @unique
+  password       String
+  name           String
+  createdEmpoyee Employees[]
+}
+
+model Employees {
+  id        String @id @default(uuid())
+  firstName String
+  lastName  String
+  age       String
+  adress    String
+  user      User   @relation(fields: [userId], references: [id])
+  userId    String
+}
+
+// изменить модель просто так нельзя
+// если изменил что то npx prisma migrate dev change-field
+// вводим имя новой миграции, что то вроде комента

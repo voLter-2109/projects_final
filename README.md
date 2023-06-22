@@ -25,3 +25,7 @@
 
 ![Settings Window](https://raw.github.com/voLter-2109/projects/main/marvel.png)
 
+<h1 align="center"> DASHBORD</h1>
+
+![Settings Window](https://raw.github.com/voLter-2109/projects/main/dashbord.jpg)
+

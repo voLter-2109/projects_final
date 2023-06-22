@@ -1,0 +1,65 @@
+1. prisma 
+Prisma - это инструмент, позволяющий работать с реляционными 
+( PostgreSQL , MySQL , SQL Server , SQLite )
+и нереляционной ( MongoDB ) базами данных с помощью JavaScript
+ или TypeScript без использования SQL (хотя такая возможность имеется).
+
+2. подключеие к базе данных SQLLite, обычно идет подключение как к серверу,
+ но на SQLLite создается отдельный файл
+npx prisma init --datasource-provider sqlite
+зашем model описывающим нашу базу данных, конструюруем базу командой
+npx prisma migrate dev --name init
+запустить отображение 
+npx prisma studio
+
+
+1. npm i  express-generator  
+        команды express -h
+    express --no-view
+
+    2. запуск сервера npm run server
+    строка в packpage.json    "server": "nodemon ./bin/www"
+    через приложение postman можно отслуживатьи проверять запросы
+
+
+
+3/ в случае ошибка cors поставить npm i cors
+
+
+
+    // This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// uuid сам генерирует код
+// default - значение по дефолту
+// unique -Определяет уникальное ограничение для этого поля.
+// relation
+// updatedAt
+// id 
+//  type Int
+model User {
+  id             String      @id @default(uuid())
+  email          String      @unique
+  password       String
+  name           String
+  createdEmpoyee Employees[]
+}
+
+model Employees {
+  id        String @id @default(uuid())
+  firstName String
+  lastName  String
+  age       String
+  adress    String
+  user      User   @relation(fields: [userId], references: [id])
+  userId    String
+}
