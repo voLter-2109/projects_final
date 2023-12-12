@@ -1,5 +1,7 @@
 # projects
 
+![gif-happy](https://media.giphy.com/media/IwAZ6dvvvaTtdI8SD5/giphy.gif)
+
 <ul>
 <h2>Resours</h2>
 <li>React</li>
