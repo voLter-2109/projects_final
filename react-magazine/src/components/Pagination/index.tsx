@@ -4,7 +4,7 @@ import axios from "axios";
 import { useSelector } from "react-redux";
 import { selectCategoryId } from "../../redux/slices/filterSlice";
 import style from "./Pagination.module.scss";
-// ! backend не прелоставляет информацию о всех продуктах для пагинации
+// ! из-за  новой версии @types\react 18 typePagination выдает ощибку 
 
 type IPaginationProps = {
   setCurrentPage: (currentPage: number) => void;
@@ -31,6 +31,7 @@ const Pagination: React.FC<IPaginationProps> = ({
   return (
     <>
       {pagination && catId === 0 && (
+      //@ts-ignore
         <ReactPaginate
           className={style.root}
           breakLabel="..."
