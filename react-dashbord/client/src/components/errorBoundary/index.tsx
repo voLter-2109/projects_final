@@ -1,5 +1,6 @@
 import { Alert, Row, Space } from "antd";
 import React from "react";
+//@ts-ignore
 import { ErrorBoundary } from "react-error-boundary";
 import CustomButton from "../custom-button";
 
@@ -9,6 +10,7 @@ type Props = {
 
 const CustomErrorBoundary: React.FC<Props> = ({ children }) => {
   return (
+    //@ts-ignore
     <ErrorBoundary
       fallback={
         <Row style={{ height: "100vh" }} align="middle" justify="center">

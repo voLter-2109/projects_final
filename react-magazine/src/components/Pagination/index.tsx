@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import ReactPaginate from "react-paginate";
 import axios from "axios";
+import { useEffect, useState } from "react";
+import ReactPaginate from "react-paginate";
 import { useSelector } from "react-redux";
 import { selectCategoryId } from "../../redux/slices/filterSlice";
 import style from "./Pagination.module.scss";
@@ -11,10 +11,7 @@ type IPaginationProps = {
   currentPage: number;
 };
 
-const Pagination: React.FC<IPaginationProps> = ({
-  setCurrentPage,
-  currentPage,
-}) => {
+const Pagination = ({ setCurrentPage, currentPage }: IPaginationProps): any => {
   const [pagination, setPagination] = useState<number>();
   const catId = useSelector(selectCategoryId);
 
@@ -31,6 +28,7 @@ const Pagination: React.FC<IPaginationProps> = ({
   return (
     <>
       {pagination && catId === 0 && (
+        //@ts-ignore
         <ReactPaginate
           className={style.root}
           breakLabel="..."

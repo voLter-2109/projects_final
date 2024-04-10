@@ -54,7 +54,7 @@ root.render(
             </>
           }
         >
-          <RouterProvider router={router} />
+          <RouterProvider router={router}  />
         </Suspense>
       </Auth>
     </ConfigProvider>
